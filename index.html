@@ -1,16 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="bn">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ashi Top Up - Free Fire Top Up</title>
+  <title>Ashi Top Up</title>
 
   <style>
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
       font-family: Arial, sans-serif;
     }
 
@@ -22,51 +21,154 @@
     header {
       background: #111827;
       color: white;
-      padding: 16px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 100;
+      padding: 18px;
+      text-align: center;
     }
 
-    .logo {
-      font-size: 22px;
-      font-weight: bold;
-      color: #22c55e;
+    header h1 {
+      font-size: 28px;
     }
 
-    .menu {
-      font-size: 25px;
-      cursor: pointer;
+    header p {
+      margin-top: 5px;
+      color: #cbd5e1;
     }
 
     .hero {
-      background: linear-gradient(135deg, #111827, #1e3a8a);
-      color: white;
+      padding: 35px 20px;
       text-align: center;
-      padding: 45px 20px;
+      background: linear-gradient(135deg, #2563eb, #7c3aed);
+      color: white;
     }
 
-    .hero h1 {
-      font-size: 34px;
-      margin-bottom: 12px;
-    }
-
-    .hero h1 span {
-      color: #22c55e;
+    .hero h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
     }
 
     .hero p {
       font-size: 16px;
-      line-height: 1.6;
-      margin-bottom: 25px;
     }
 
-    .hero-btn {
-      display: inline-block;
-      background: #22c55e;
+    .container {
+      max-width: 600px;
+      margin: 25px auto;
+      padding: 0 15px;
+    }
+
+    .card {
+      background: white;
+      padding: 22px;
+      margin-bottom: 18px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 13px;
+      margin: 8px 0;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      background: #2563eb;
       color: white;
-      padding: 13px 25px;
-      border-radius: 10
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    .payment {
+      display: flex;
+      gap: 10px;
+    }
+
+    .payment div {
+      flex: 1;
+      padding: 15px;
+      text-align: center;
+      border-radius: 10px;
+      background: #f1f5f9;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #111827;
+      color: #cbd5e1;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Ashi Top Up</h1>
+    <p>Fast • Secure • Trusted</p>
+  </header>
+
+  <section class="hero">
+    <h2>Free Fire Top Up</h2>
+    <p>সহজে এবং দ্রুত আপনার গেমে Top Up করুন</p>
+  </section>
+
+  <main class="container">
+
+    <div class="card">
+      <h3>🎮 Top Up Information</h3>
+
+      <input type="text" placeholder="Free Fire Player ID">
+
+      <select>
+        <option>Select Diamond Package</option>
+        <option>100 Diamonds</option>
+        <option>310 Diamonds</option>
+        <option>520 Diamonds</option>
+        <option>1060 Diamonds</option>
+        <option>2180 Diamonds</option>
+      </select>
+
+      <button>Continue</button>
+    </div>
+
+    <div class="card">
+      <h3>💳 Payment Method</h3>
+
+      <div class="payment">
+        <div>বিকাশ</div>
+        <div>নগদ</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>🔒 নিরাপদ Top Up</h3>
+      <p>আপনার Player ID সঠিকভাবে দেওয়ার পর পেমেন্ট সম্পন্ন করুন।</p>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Ashi Top Up</p>
+    <p>All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
